@@ -1,6 +1,6 @@
 <template lang="pug">
   header.page-header
-    a(href="#").page-header__logo.link Fraction
+    a(href="#").page-header__logo Fraction
 </template>
 
 <script>

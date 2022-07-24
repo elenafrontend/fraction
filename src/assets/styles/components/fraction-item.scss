@@ -1,0 +1,60 @@
+
+.fraction-item {
+  display: flex;
+  border: 1px solid $gray-light;
+  border-radius: $radius-base;
+  padding: 20px;
+  transition: $transition-base;
+
+  &:hover {
+    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+
+    .fraction-item__caption {
+      color: $gray-middle;
+    }
+
+    .fraction-item__logo {
+      background-color: $blue-light;
+    }
+  }
+}
+
+.fraction-item__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.fraction-item__caption {
+  font-family: $font-family-title;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.fraction-item__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 50%;
+  min-width: 97px;
+  height: 97px;
+  background-color: $gray-light;
+  transition: $transition-base;
+}
+
+.fraction-item__logo-icon {
+  width: 75px;
+  height: 75px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.fraction-item__link {
+  @extend %link;
+  margin-top: auto;
+}

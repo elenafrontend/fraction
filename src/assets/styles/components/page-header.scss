@@ -6,8 +6,10 @@
 }
 
 .page-header__logo {
+  @extend %link;
+
   display: block;
-  color: $logo-base;
+  //color: $gray-middle;
   font-family: $font-family-title;
   font-size: 2rem;
   font-weight: 600;
@@ -15,6 +17,6 @@
   cursor: pointer;
 
   &:hover {
-    color: $font-base;
+    color: $gray-middle;
   }
 }

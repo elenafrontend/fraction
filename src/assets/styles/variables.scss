@@ -2,8 +2,12 @@
 $font-family-base:          'Roboto', sans-serif;
 $font-family-title:         'Open Sans', sans-serif;
 
+$radius-base:               3px;
+
 $transition-base:           .3s cubic-bezier(.4,0,.2,1);
 
 // ---------- Colors ------------
-$font-base:                 #626262;
-$logo-base:                 #848e99;
+$gray-dark:                 #48494D;
+$gray-middle:               #848e99;
+$gray-light:                #d4d3cf;
+$blue-light:                #aacce8;
