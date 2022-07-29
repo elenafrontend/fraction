@@ -1,37 +1,52 @@
 export default [
   {
     id: 'paper',
-    name: 'Бумага',
-    img: '',
+    name: 'Макулатура',
+    icon: 'paper',
   },
   {
-    id: 'pet',
+    id: 'pet-bottles',
     name: 'ПЭТ бутылки',
-    img: '',
+    icon: 'pet-bottles',
   },
   {
-    id: 'pet',
+    id: 'pet-box',
     name: 'Листовой ПЭТ',
-    img: '',
+    icon: '',
   },
   {
     id: 'plastic',
     name: 'Мягкий пластик',
-    img: '',
+    icon: '',
   },
-  // {
-  //   id: 'plastic',
-  //   name: 'Полипропилен',
-  //   img: '',
-  // },
   {
-    id: 'plastic',
+    id: 'polypropylene',
+    name: 'Полипропилен',
+    icon: '',
+  },
+  {
+    id: 'polypropylene',
+    name: 'Полистирол',
+    icon: '',
+  },
+  {
+    id: 'tetrapak',
+    name: 'Tetra Pack',
+    icon: 'tetrapak',
+  },
+  {
+    id: 'metal',
     name: 'Металл',
-    img: '',
+    icon: 'metal',
   },
   {
-    id: 'plastic',
+    id: 'stuff',
     name: 'Одежда, обувь, ткани',
-    img: '',
+    icon: 'stuff',
+  },
+  {
+    id: 'devices',
+    name: 'Бытовая техника',
+    icon: 'devices',
   },
 ];

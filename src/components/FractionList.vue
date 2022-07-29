@@ -9,7 +9,8 @@
         a.fraction-item__link(href="#") Перейти
       .fraction-item__logo
         .fraction-item__logo-icon
-          img(src="@/assets/images/icons/icon-bottles.png")
+          svg.svg-icon
+            use(:href="`#icon-${fraction.icon}`")
 </template>
 
 <script>

@@ -25,8 +25,8 @@
 
 .svg-icon {
   /* Разместить иконку выше базового текста. */
-  position: relative;
-  top: 0.125em;
+  //position: relative;
+  //top: 0.125em;
 
   /* Не дать иконке сжаться внутри flex-контейнера. */
   flex-shrink: 0;
@@ -46,7 +46,7 @@
       * переход, мы можем также задать для fill нужное значение
       * transition.
   */
-  transition: fill $transition-base;
+  //transition: $transition-base;
 }
 
 // === PLACEHOLDERS ===
