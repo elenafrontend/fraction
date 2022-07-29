@@ -1,22 +1,47 @@
 .page-header {
+  display: flex;
+  justify-content: center;
   border-bottom: 1px solid rgba(0,0,0,0.1);
-  padding: 25px 0;
+  padding: 10px 0;
   min-height: 50px;
-  text-align: center;
 }
 
 .page-header__logo {
   @extend %link;
 
-  display: block;
-  //color: $gray-middle;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
   font-family: $font-family-title;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
 
   &:hover {
     color: $gray-middle;
+
+    .page-header__logo-img {
+      border-color: $gray-middle;
+      fill: $blue-light;
+    }
   }
+}
+
+.page-header__logo-img {
+  position: static;
+  border: 2px solid $font-color-base;
+  border-radius: 50%;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  fill: $font-color-base;
+  transition: $transition-base;
+}
+
+.page-header__logo-title {
+  position: relative;
+  right: 30px;
+  padding: 5px 10px;
+  background-color: $white;
 }
