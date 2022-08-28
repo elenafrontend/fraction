@@ -6,7 +6,10 @@
     )
       .fraction-item__content
         .fraction-item__caption {{ fraction.name }}
-        a.fraction-item__link(href="#") Перейти
+        a.fraction-item__link(href="#")
+          | Перейти
+          svg.fraction-item__link-icon.svg-icon
+            use(href="#icon-arrow")
       .fraction-item__logo
         .fraction-item__logo-icon
           svg.svg-icon

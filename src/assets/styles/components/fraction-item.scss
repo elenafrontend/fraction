@@ -26,6 +26,7 @@
 .fraction-item__content {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   margin-right: 10px;
 }
 
@@ -59,5 +60,30 @@
 
 .fraction-item__link {
   @extend %link;
+
+  position: relative;
   margin-top: auto;
+  color: $gray-light;
+
+  &:hover,
+  &:focus {
+    color: $gray-dark;
+
+    .fraction-item__link-icon {
+      animation-name: buttonArrow;
+      animation-duration: 400ms;
+      animation-timing-function: ease-in;
+    }
+  }
+}
+
+.fraction-item__link-icon {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  width: 6px;
+  height: 10px;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: right $transition-base;
 }
