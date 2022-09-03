@@ -1,38 +1,73 @@
 export default [
   {
-    id: 'paper',
-    name: 'Макулатура',
-    icon: 'paper',
-  },
-  {
     id: 'pet-bottles',
     name: 'ПЭТ бутылки',
     icon: 'pet-bottles',
   },
   {
-    id: 'pet-box',
+    id: 'pet-container',
     name: 'Листовой ПЭТ',
-    icon: '',
+    icon: 'pet-container',
   },
   {
-    id: 'plastic',
-    name: 'Мягкий пластик',
-    icon: '',
+    id: 'tetrapak',
+    name: 'Тетра Пак',
+    icon: 'tetrapak',
+  },
+  {
+    id: 'doypack',
+    name: 'Дой-пак',
+    icon: 'doypack',
   },
   {
     id: 'polypropylene',
     name: 'Полипропилен',
-    icon: '',
+    icon: 'pp-containers',
   },
   {
-    id: 'polypropylene',
+    id: 'polystyrene',
     name: 'Полистирол',
-    icon: '',
+    icon: 'egg-container',
   },
   {
-    id: 'tetrapak',
-    name: 'Tetra Pack',
-    icon: 'tetrapak',
+    id: 'soft-plastic',
+    name: 'Мягкий пластик',
+    icon: 'soft-plastic',
+  },
+  {
+    id: 'sundry',
+    name: 'Мелкая фракция',
+    icon: 'blister',
+  },
+  {
+    id: 'chemical-bottles',
+    name: 'Флаконы',
+    icon: 'chemical-bottles',
+  },
+  {
+    id: 'tubes',
+    name: 'Тюбики',
+    icon: 'tubes',
+  },
+  {
+    id: 'clothes',
+    name: 'Одежда, обувь, ткани',
+    icon: 'clothes',
+  },
+  {
+    id: 'appliances',
+    name: 'Бытовая техника',
+    icon: 'appliances',
+  },
+  {
+    id: 'paper',
+    name: 'Бумага',
+    icon: 'paper',
+  },
+  {
+    id: 'glass',
+    name: 'Стекло',
+    icon: 'glass',
   },
   {
     id: 'metal',
@@ -40,13 +75,13 @@ export default [
     icon: 'metal',
   },
   {
-    id: 'stuff',
-    name: 'Одежда, обувь, ткани',
-    icon: 'stuff',
+    id: 'canisters',
+    name: 'Канистры',
+    icon: 'canister',
   },
   {
-    id: 'devices',
-    name: 'Бытовая техника',
-    icon: 'devices',
+    id: 'construction',
+    name: 'Трубы и строительные материалы',
+    icon: 'pipes',
   },
 ];
