@@ -6,7 +6,7 @@
     )
       .fraction-item__content
         .fraction-item__caption {{ fraction.name }}
-        a.fraction-item__link(href="#")
+        router-link.fraction-item__link(:to="{ path: `/fraction/${fraction.id}` }")
           | Перейти
           svg.fraction-item__link-icon.svg-icon
             use(href="#icon-arrow")

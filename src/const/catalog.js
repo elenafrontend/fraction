@@ -44,11 +44,11 @@ export default [
     name: 'Флаконы',
     icon: 'chemical-bottles',
   },
-  {
-    id: 'tubes',
-    name: 'Тюбики',
-    icon: 'tubes',
-  },
+  // {
+  //   id: 'tubes',
+  //   name: 'Тюбики',
+  //   icon: 'tubes',
+  // },
   {
     id: 'clothes',
     name: 'Одежда, обувь, ткани',
