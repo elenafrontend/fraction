@@ -63,3 +63,16 @@
   transition: $transition-base;
   transition-property: color;
 }
+
+%picture {
+  position: relative;
+  border-radius: $radius-base;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
