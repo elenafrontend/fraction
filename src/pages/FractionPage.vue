@@ -2,29 +2,35 @@
   main.page-content.page-content--color
     .container
       article.page-section
+        router-link.page-section__prev-link.link.link--icon.link--icon--before(
+          to="/"
+        )
+          svg.svg-icon
+            use(href="#icon-back-arrow")
+          span Назад
         .fraction-card
-          .fraction-card__img
-            //img(src='')
-          .fraction-card__title.title {{ fraction.name }}
+            .fraction-card__img
+              //img(src='')
+            .fraction-card__title.title {{ fraction.name }}
 
-          .fraction-card__info(v-if="fractionInfo")
-            .fraction-card__section
-              .subtitle Принимаем
-              .fraction-card__note(v-if="fractionInfo.note") {{ fraction.note }}
-              ul.fraction-card__list
-                li.fraction-card__item(v-for="item in fractionInfo.items") {{ item }}
+            .fraction-card__info(v-if="fractionInfo")
+              .fraction-card__section
+                .subtitle Принимаем
+                .fraction-card__note(v-if="fractionInfo.note") {{ fraction.note }}
+                ul.fraction-card__list
+                  li.fraction-card__item(v-for="item in fractionInfo.items") {{ item }}
 
-            .fraction-card__section.fraction-card__section--border(v-if="fractionInfo.banList")
-              .subtitle Не принимаем
-              ul.fraction-card__list(v-if="fractionInfo.banList.length > 1" )
-                li.fraction-card__item(v-for="item in fractionInfo.banList") {{ item }}
-              .fraction-card__note(v-else) {{ fractionInfo.banList[0] }}
+              .fraction-card__section.fraction-card__section--border(v-if="fractionInfo.banList")
+                .subtitle Не принимаем
+                ul.fraction-card__list(v-if="fractionInfo.banList.length > 1" )
+                  li.fraction-card__item(v-for="item in fractionInfo.banList") {{ item }}
+                .fraction-card__note(v-else) {{ fractionInfo.banList[0] }}
 
-            .fraction-card__section.fraction-card__section--border
-              .subtitle Как подготовить
-              .fraction-card__note {{ fractionInfo.preparation }}
+              .fraction-card__section.fraction-card__section--border
+                .subtitle Как подготовить
+                .fraction-card__note {{ fractionInfo.preparation }}
 
-          .fraction-card__section(v-else) Скоро здесь будет описание фракции
+            .fraction-card__section(v-else) Скоро здесь будет описание фракции
 </template>
 
 <script>

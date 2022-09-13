@@ -39,6 +39,11 @@ body {
   }
 }
 
+.page-section__prev-link {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .page-banner {
   @extend %picture;
 
@@ -76,5 +81,21 @@ body {
     width: 100%;
     height: 2px;
     background-color: $font-decoration;
+  }
+}
+
+.link {
+  @extend %link;
+
+  &--icon {
+    .svg-icon {
+      vertical-align: bottom;
+    }
+  }
+
+  &--icon--before {
+    .svg-icon {
+      margin-right: 15px;
+    }
   }
 }
