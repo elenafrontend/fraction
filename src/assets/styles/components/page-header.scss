@@ -13,7 +13,7 @@
   align-items: center;
   margin: 0 auto;
   font-family: $font-family-title;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
@@ -29,11 +29,11 @@
 }
 
 .page-header__logo-img {
-  border: 2px solid $font-color-base;
+  border: 1px solid $font-color-base;
   border-radius: 50%;
   padding: 20px;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   fill: $font-color-base;
   transition: $transition-base;
 }
