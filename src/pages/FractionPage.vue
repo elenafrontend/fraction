@@ -4,25 +4,27 @@
       article.page-section
         .fraction-card
           .fraction-card__img
-            img(src='https://github.com/elenafrontend/fraction/blob/main/src/assets/images/banner/hero-image.jpg')
-          .fraction-card__info
-            .title {{ fraction.name }}
+            //img(src='')
+          .fraction-card__title.title {{ fraction.name }}
 
+          .fraction-card__info(v-if="fractionInfo")
             .fraction-card__section
               .subtitle Принимаем
-              .fraction-card__note(v-if="fraction.note") {{ fraction.note }}
+              .fraction-card__note(v-if="fractionInfo.note") {{ fraction.note }}
               ul.fraction-card__list
-                li.fraction-card__item(v-for="item in fraction.items") {{ item }}
+                li.fraction-card__item(v-for="item in fractionInfo.items") {{ item }}
 
-            .fraction-card__section.fraction-card__section--border(v-if="fraction.banList")
+            .fraction-card__section.fraction-card__section--border(v-if="fractionInfo.banList")
               .subtitle Не принимаем
-              ul.fraction-card__list(v-if="fraction.banList.length > 1" )
-                li.fraction-card__item(v-for="item in fraction.banList") {{ item }}
-              .fraction-card__note(v-else) {{ fraction.banList[0] }}
+              ul.fraction-card__list(v-if="fractionInfo.banList.length > 1" )
+                li.fraction-card__item(v-for="item in fractionInfo.banList") {{ item }}
+              .fraction-card__note(v-else) {{ fractionInfo.banList[0] }}
 
             .fraction-card__section.fraction-card__section--border
               .subtitle Как подготовить
-              .fraction-card__note {{ fraction.preparation }}
+              .fraction-card__note {{ fractionInfo.preparation }}
+
+          .fraction-card__section(v-else) Скоро здесь будет описание фракции
 </template>
 
 <script>
@@ -40,6 +42,10 @@ export default {
   computed: {
     fractionId() {
       return this.$route.params.id;
+    },
+
+    fractionInfo() {
+      return this.fraction.info;
     },
   },
 

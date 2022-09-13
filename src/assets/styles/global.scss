@@ -25,6 +25,10 @@ body {
 
 .page-content {
   flex-grow: 1;
+
+  &--color {
+    background-color: $color-background;
+  }
 }
 
 .page-section {
@@ -48,7 +52,6 @@ body {
 }
 
 .title {
-  margin-bottom: 30px;
   font-family: $font-family-title;
   font-size: 1.5rem;
   font-weight: 700;

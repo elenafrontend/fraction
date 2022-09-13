@@ -7,9 +7,13 @@ $transition-base:           .3s cubic-bezier(.4,0,.2,1);
 $gray-dark:                 #48494D;
 $gray-middle:               #848e99;
 $gray-light:                #d4d3cf;
+$gray-transparent:          #f9f9f8;
 $blue-light:                #aacce8;
 $white:                     #ffffff;
 $black:                     #000000;
+
+$color-decoration:          $blue-light;
+$color-background:          $gray-transparent;
 
 
 // ---------- Fonts ------------
