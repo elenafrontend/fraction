@@ -2,9 +2,7 @@
   .wrapper
     SvgSprite
     PageHeader
-    main.page-content
-      .container
-        router-view
+    router-view
 </template>
 
 <script>

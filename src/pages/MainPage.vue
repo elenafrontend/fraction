@@ -1,9 +1,11 @@
 <template lang="pug">
-  section.page-section
-    .page-banner
-      img(src="@/assets/images/banner/hero-image.jpg")
-  section.page-section
-    FractionList
+  main.page-content.page-content
+    .container
+      section.page-section
+        .page-banner
+          img(src="@/assets/images/banner/hero-image.jpg")
+      section.page-section
+        FractionList
 </template>
 
 <script>
