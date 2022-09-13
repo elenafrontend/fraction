@@ -13,7 +13,7 @@
   align-items: center;
   margin: 0 auto;
   font-family: $font-family-title;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
   text-transform: uppercase;
   cursor: pointer;
@@ -26,21 +26,31 @@
       fill: $blue-light;
     }
   }
+
+  @media screen and (min-width: 1500px) {
+    font-size: 2rem;
+  }
 }
 
 .page-header__logo-img {
   border: 1px solid $font-color-base;
   border-radius: 50%;
   padding: 20px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   fill: $font-color-base;
   transition: $transition-base;
+
+  @media screen and (min-width: 1500px) {
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .page-header__logo-title {
   position: relative;
-  right: 30px;
+  right: 25px;
   padding: 5px 10px;
   background-color: $white;
 }
